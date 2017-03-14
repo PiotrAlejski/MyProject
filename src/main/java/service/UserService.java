@@ -7,10 +7,14 @@ import model.User;
  */
 public class UserService {
 
-    public UserService() {
-    }
+    private User userFromFile;
 
     public boolean authenticate(User user) {
-        return false;
+        //pobieramy password z user, gdy mamy więcej niż 1 usera
+        //pobieramy userFromFile czyli usera z pliku
+        DataService dataService = new DataService();
+        User userFromFile = dataService.loadData();
+
+        return user.equals(userFromFile);
     }
 }

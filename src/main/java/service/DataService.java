@@ -19,7 +19,7 @@ public class DataService {
         this.file = new File ("C:\\Users\\RENT\\Desktop\\data\\data.dat");
     }
 
-    public void saveData() {
+    public void saveData(String xmlString) {
         try {
             FileUtils.touch(file);
             FileUtils.writeStringToFile(file, xmlString);
