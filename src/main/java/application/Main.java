@@ -30,6 +30,7 @@ public class Main extends Application {
         Scene scene = new Scene(stackPane);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Logowanie");
+        primaryStage.setHeight(550);
         primaryStage.show();
     }
 }

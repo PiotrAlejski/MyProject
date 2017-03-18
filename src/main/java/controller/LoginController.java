@@ -34,9 +34,10 @@ public class LoginController extends Controller {
     void submitOnAction(ActionEvent event) {
         System.out.println(loginTextField.getText());
         System.out.println(passwordField.getText());
-        Alert alert = new Alert(Alert.AlertType.INFORMATION, "Hello");
-        alert.show();
-        getMainController().getMainStackPane().getChildren().add(new Label("Test zadziałania"));
+//        Alert alert = new Alert(Alert.AlertType.INFORMATION, "Hello");
+//        alert.show();
+        getMainController().loadView("menuView");
+//        getMainController().getMainStackPane().getChildren().add(new Label("Test zadziałania"));
         /**
          * 1. Powołujemy do życia UserService
          * 2. Tworzymy Usera z polami pobranymi z fieldów
